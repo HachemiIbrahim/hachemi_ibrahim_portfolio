@@ -1,0 +1,59 @@
+name: hachemi_ibrahim_portfolio
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  animated_text_kit: ^4.2.2
+  carousel_slider: ^5.0.0
+  flip_card: ^0.7.0
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.7.0
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  universal_html: ^2.2.4
+  url_launcher: ^6.3.0
+  url_strategy: ^0.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/work/
+    - assets/photos/
+    - assets/services/
+    - assets/projects/
+
+    - data.json
+
+  fonts:
+    - family: Agustina
+      fonts:
+        - asset: fonts/agustina/agustina.otf
+    
+    - family: Montserrat
+      fonts:
+        - asset: fonts/montserrat/montserrat.ttf
+    
+    - family: Poppins
+      fonts:
+        - asset: fonts/poppins/Poppins-Regular.ttf
+        - asset: fonts/poppins/Poppins-Light.ttf
+        - asset: fonts/poppins/Poppins-Bold.ttf
+          weight: 900
+        - asset: fonts/poppins/Poppins-Medium.ttf
+          weight: 300
+        - asset: fonts/poppins/Poppins-SemiBold.ttf
+          weight: 500
+        - asset: fonts/poppins/Poppins-Italic.ttf
+          style: italic
