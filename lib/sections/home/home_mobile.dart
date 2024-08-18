@@ -20,7 +20,7 @@ class HomeMobile extends StatelessWidget {
           Center(
             child: Container(
               margin: EdgeInsets.fromLTRB(
-                AppDimensions.normalize(30),
+                size.width * 0.35,
                 AppDimensions.normalize(80),
                 0,
                 0,
