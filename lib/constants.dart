@@ -10,6 +10,7 @@ final kTools = [
   "Flutter",
   "Dart",
   "Python",
+  "FastApi",
+  "Firebase",
   "Java",
-  "C++",
 ];

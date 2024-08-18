@@ -1,18 +1,15 @@
 import 'package:hachemi_ibrahim_portfolio/configs/configs.dart';
 import 'package:hachemi_ibrahim_portfolio/utils/about_utils.dart';
 import 'package:hachemi_ibrahim_portfolio/utils/utils.dart';
-import 'package:hachemi_ibrahim_portfolio/utils/work_utils.dart';
 
 import 'package:hachemi_ibrahim_portfolio/widget/custom_text_heading.dart';
-import 'package:universal_html/html.dart' as html;
 import 'package:flutter/material.dart';
 import 'package:hachemi_ibrahim_portfolio/constants.dart';
-import 'package:hachemi_ibrahim_portfolio/widget/about_me_data.dart';
-import 'package:hachemi_ibrahim_portfolio/widget/community_button.dart';
+
 import 'package:hachemi_ibrahim_portfolio/widget/tech_widget.dart';
 
 class AboutTab extends StatelessWidget {
-  const AboutTab({Key? key}) : super(key: key);
+  const AboutTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +33,7 @@ class AboutTab extends StatelessWidget {
           ),
           Space.y1!,
           Image.asset(
-            StaticUtils.mobilePhoto,
+            StaticUtils.blackWhitePhoto,
             height: height * 0.27,
           ),
           SizedBox(
@@ -93,77 +90,23 @@ class AboutTab extends StatelessWidget {
           Space.y!,
           Row(
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  AboutMeData(
-                    data: "Name",
-                    information: "Muhammad Hamza",
-                  ),
-                  AboutMeData(
-                    data: "Age",
-                    information: "24",
-                  ),
-                ],
+                children: [],
               ),
               SizedBox(
                 width: width > 710 ? width * 0.2 : width * 0.05,
               ),
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                  AboutMeData(
-                    data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
-                  ),
-                  AboutMeData(
-                    data: "From",
-                    information: "Attock, PK",
-                  ),
-                ],
+                children: [],
               ),
             ],
           ),
           Space.y1!,
           Row(
             children: [
-              SizedBox(
-                height: AppDimensions.normalize(13),
-                width: AppDimensions.normalize(40),
-                child: OutlinedButton(
-                  onPressed: () => html.window.open(StaticUtils.resume, 'pdf'),
-                  child: const Text(
-                    "Resume",
-                  ),
-                ),
-              ),
               Space.x!,
-              Container(
-                width: width * 0.05,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.grey[900]!,
-                      width: 2.0,
-                    ),
-                  ),
-                ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconBtn(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
-              ),
             ],
           )
         ],

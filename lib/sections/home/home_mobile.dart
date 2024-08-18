@@ -1,6 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:hachemi_ibrahim_portfolio/animations/entrance_fader.dart';
 import 'package:hachemi_ibrahim_portfolio/configs/configs.dart';
 
 import 'package:hachemi_ibrahim_portfolio/utils/utils.dart';
@@ -20,8 +19,8 @@ class HomeMobile extends StatelessWidget {
           Center(
             child: Container(
               margin: EdgeInsets.fromLTRB(
-                size.width * 0.35,
-                AppDimensions.normalize(80),
+                size.width * 0.4,
+                size.height * 0.4,
                 0,
                 0,
               ),
@@ -86,28 +85,6 @@ class HomeMobile extends StatelessWidget {
                   Space.y!,
                   const SocialLinks(),
                 ],
-              ),
-            ),
-          ),
-          // SizedBox(
-          //   height: size.height * 0.4,
-          // ),
-          Align(
-            child: Positioned(
-              right: 0,
-              child: Opacity(
-                opacity: 0.9,
-                child: EntranceFader(
-                  offset: const Offset(0, 0),
-                  delay: const Duration(seconds: 1),
-                  duration: const Duration(milliseconds: 800),
-                  child: Image.asset(
-                    StaticUtils.blackWhitePhoto,
-                    height: size.width < 1000
-                        ? size.height * 0.3
-                        : size.height * 0.4,
-                  ),
-                ),
               ),
             ),
           ),

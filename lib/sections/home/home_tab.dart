@@ -17,30 +17,10 @@ class HomeTab extends StatelessWidget {
       height: size.height * 1.02,
       child: Stack(
         children: [
-          Align(
-            alignment: Alignment.centerRight,
-            child: Positioned(
-              right: 0,
-              child: Opacity(
-                opacity: 0.9,
-                child: EntranceFader(
-                  offset: const Offset(0, 0),
-                  delay: const Duration(seconds: 1),
-                  duration: const Duration(milliseconds: 800),
-                  child: Image.asset(
-                    StaticUtils.blackWhitePhoto,
-                    height: size.width < 1200
-                        ? size.height * 0.4
-                        : size.height * 0.5,
-                  ),
-                ),
-              ),
-            ),
-          ),
           Container(
             margin: EdgeInsets.fromLTRB(
-              AppDimensions.normalize(30),
-              AppDimensions.normalize(80),
+              size.width * 0.4,
+              size.height * 0.4,
               0,
               0,
             ),

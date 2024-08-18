@@ -1,20 +1,16 @@
-import 'package:flutter/foundation.dart';
 import 'package:hachemi_ibrahim_portfolio/configs/configs.dart';
 import 'package:hachemi_ibrahim_portfolio/utils/about_utils.dart';
 import 'package:hachemi_ibrahim_portfolio/utils/utils.dart';
-import 'package:hachemi_ibrahim_portfolio/utils/work_utils.dart';
 
 import 'package:hachemi_ibrahim_portfolio/widget/custom_text_heading.dart';
-import 'package:universal_html/html.dart' as html;
 
 import 'package:flutter/material.dart';
 import 'package:hachemi_ibrahim_portfolio/constants.dart';
-import 'package:hachemi_ibrahim_portfolio/widget/about_me_data.dart';
-import 'package:hachemi_ibrahim_portfolio/widget/community_button.dart';
+
 import 'package:hachemi_ibrahim_portfolio/widget/tech_widget.dart';
 
 class AboutMobile extends StatelessWidget {
-  const AboutMobile({Key? key}) : super(key: key);
+  const AboutMobile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +28,7 @@ class AboutMobile extends StatelessWidget {
           ),
           Space.y1!,
           Image.asset(
-            StaticUtils.mobilePhoto,
+            StaticUtils.blackWhitePhoto,
             height: height * 0.27,
           ),
           SizedBox(
@@ -91,40 +87,6 @@ class AboutMobile extends StatelessWidget {
             color: Colors.grey[800],
             thickness: AppDimensions.normalize(0.5),
           ),
-          SizedBox(
-            height: height * 0.02,
-          ),
-          const AboutMeData(
-            data: "Name",
-            information: "Muhammad Hamza",
-          ),
-          const AboutMeData(
-            data: "Email",
-            information: "hamza.6.shakeel@gmail.com",
-          ),
-          Space.y!,
-          OutlinedButton(
-              child: const Text("Resume"),
-              onPressed: () {
-                kIsWeb
-                    ? html.window.open(StaticUtils.resume, "pdf")
-                    : openURL(StaticUtils.resume);
-              }),
-          Space.y!,
-          Wrap(
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: WorkUtils.logos
-                  .asMap()
-                  .entries
-                  .map(
-                    (e) => CommunityIconBtn(
-                      icon: e.value,
-                      link: WorkUtils.communityLinks[e.key],
-                      height: WorkUtils.communityLogoHeight[e.key],
-                    ),
-                  )
-                  .toList()),
         ],
       ),
     );
