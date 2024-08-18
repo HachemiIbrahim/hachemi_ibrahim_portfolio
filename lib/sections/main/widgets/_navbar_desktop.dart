@@ -48,16 +48,16 @@ class _NavbarDesktop extends StatelessWidget {
             ),
           ),
           Space.x!,
-          Switch(
-            inactiveTrackColor: Colors.grey,
-            value: appProvider.isDark,
-            onChanged: (value) {
-              appProvider.setTheme(
-                !value ? ThemeMode.light : ThemeMode.dark,
-              );
-            },
-            activeColor: AppTheme.c!.primary!,
-          ),
+          // Switch(
+          //   inactiveTrackColor: Colors.grey,
+          //   value: appProvider.isDark,
+          //   onChanged: (value) {
+          //     appProvider.setTheme(
+          //       !value ? ThemeMode.light : ThemeMode.dark,
+          //     );
+          //   },
+          //   activeColor: AppTheme.c!.primary!,
+          // ),
           Space.x!,
         ],
       ),
@@ -66,7 +66,7 @@ class _NavbarDesktop extends StatelessWidget {
 }
 
 class _NavBarTablet extends StatelessWidget {
-  const _NavBarTablet({Key? key}) : super(key: key);
+  const _NavBarTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
