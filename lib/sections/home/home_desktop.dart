@@ -13,19 +13,19 @@ class HomeDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    return Center(
-      child: Container(
-        height: size.height * 1.025,
-        padding: Space.h,
-        child: Stack(
-          children: [
-            Container(
-              margin: EdgeInsets.fromLTRB(
-                size.width * 0.4,
-                size.height * 0.4,
-                0,
-                0,
-              ),
+    return Container(
+      height: size.height,
+      padding: Space.h,
+      child: Stack(
+        children: [
+          Container(
+            margin: EdgeInsets.fromLTRB(
+              size.width * 0.35,
+              size.height * 0.3,
+              0,
+              0,
+            ),
+            child: Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -98,8 +98,8 @@ class HomeDesktop extends StatelessWidget {
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

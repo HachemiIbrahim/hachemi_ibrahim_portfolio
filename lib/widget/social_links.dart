@@ -15,7 +15,7 @@ class SocialLinks extends StatelessWidget {
     final appProvider = Provider.of<AppProvider>(context);
     return SizedBox(
       height: Responsive.isMobile(context)
-          ? AppDimensions.normalize(40)
+          ? AppDimensions.normalize(25)
           : AppDimensions.normalize(40), // Adjust height as needed
       child: Wrap(
         runSpacing: AppDimensions.normalize(10),

@@ -12,19 +12,19 @@ class HomeMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    return Center(
-      child: SizedBox(
-        height: size.height * 1.02,
-        child: Column(
-          children: [
-            Center(
-              child: Container(
-                margin: EdgeInsets.fromLTRB(
-                  size.width * 0.4,
-                  size.height * 0.4,
-                  0,
-                  0,
-                ),
+    return SizedBox(
+      height: size.height,
+      child: Column(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.fromLTRB(
+                size.width * 0.25,
+                size.height * 0.35,
+                0,
+                0,
+              ),
+              child: Center(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -89,8 +89,8 @@ class HomeMobile extends StatelessWidget {
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
