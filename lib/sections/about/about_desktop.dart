@@ -31,7 +31,7 @@ class AboutDesktop extends StatelessWidget {
               Expanded(
                 child: Image.asset(
                   StaticUtils.blackWhitePhoto,
-                  height: height * 0.7,
+                  height: height * 0.5,
                 ),
               ),
               Expanded(

@@ -1,7 +1,7 @@
 part of 'services.dart';
 
 class ServiceDesktop extends StatefulWidget {
-  const ServiceDesktop({Key? key}) : super(key: key);
+  const ServiceDesktop({super.key});
 
   @override
   ServiceDesktopState createState() => ServiceDesktopState();
@@ -20,10 +20,7 @@ class ServiceDesktopState extends State<ServiceDesktop> {
       child: Column(
         children: [
           const CustomSectionHeading(
-            text: '\nWhat I can do?',
-          ),
-          const CustomSectionSubHeading(
-            text: 'I may not be perfect but surely I\'m of some use :)\n\n',
+            text: '\nMy services',
           ),
           Space.y!,
           Wrap(
