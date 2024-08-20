@@ -12,10 +12,12 @@ class _ServiceCardBackWidget extends StatelessWidget {
     final appProvider = Provider.of<AppProvider>(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           serviceDesc,
           style: AppText.l1,
+          textAlign: TextAlign.center,
         ),
         Divider(
           color: appProvider.isDark ? Colors.white : Colors.black38,

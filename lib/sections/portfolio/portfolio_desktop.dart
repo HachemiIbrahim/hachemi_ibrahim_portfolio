@@ -21,7 +21,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
       child: Column(
         children: [
           const CustomSectionHeading(
-            text: "\nPortfolio",
+            text: "Projects",
           ),
           const CustomSectionSubHeading(
             text: "Here are few samples of my previous work :)\n\n",

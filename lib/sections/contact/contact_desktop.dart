@@ -6,7 +6,7 @@ import 'package:hachemi_ibrahim_portfolio/widget/custom_text_heading.dart';
 import 'package:hachemi_ibrahim_portfolio/widget/project_card.dart';
 
 class ContactDesktop extends StatelessWidget {
-  const ContactDesktop({Key? key}) : super(key: key);
+  const ContactDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

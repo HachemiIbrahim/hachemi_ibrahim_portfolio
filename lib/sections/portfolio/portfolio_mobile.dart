@@ -16,7 +16,7 @@ class PortfolioMobileTab extends StatelessWidget {
     return Column(
       children: [
         const CustomSectionHeading(
-          text: "\nPortfolio",
+          text: "Projects",
         ),
         const CustomSectionSubHeading(
           text: "Here are few samples of my previous work :)\n\n",

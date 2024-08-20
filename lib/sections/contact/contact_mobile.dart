@@ -6,7 +6,7 @@ import 'package:hachemi_ibrahim_portfolio/widget/custom_text_heading.dart';
 import 'package:hachemi_ibrahim_portfolio/widget/project_card.dart';
 
 class ContactMobileTab extends StatelessWidget {
-  const ContactMobileTab({Key? key}) : super(key: key);
+  const ContactMobileTab({super.key});
 
   @override
   Widget build(BuildContext context) {

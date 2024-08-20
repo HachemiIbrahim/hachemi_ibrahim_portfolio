@@ -12,7 +12,7 @@ class StaticUtils {
   // photos
   static const String mobilePhoto = 'assets/photos/mobile.png';
   static const String coloredPhoto = 'assets/photos/colored.png';
-  static const String blackWhitePhoto = 'assets/photos/profile.png';
+  static const String blackWhitePhoto = 'assets/photos/img.png';
 
   // work
   static const String dsc = 'assets/work/dsc.png';
