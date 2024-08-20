@@ -39,7 +39,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                     projectIcon: ProjectUtils.icons[e.key],
                     projectLink: ProjectUtils.links[e.key],
                     projectTitle: ProjectUtils.titles[e.key],
-                    projectDescription: ProjectUtils.description[e.key],
+                    projectDescription: ProjectUtils.descriptions[e.key],
                   ),
                 )
                 .toList(),

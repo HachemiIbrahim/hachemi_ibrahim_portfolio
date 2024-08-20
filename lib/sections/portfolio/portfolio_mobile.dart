@@ -8,7 +8,7 @@ import 'package:hachemi_ibrahim_portfolio/widget/custom_text_heading.dart';
 import 'package:hachemi_ibrahim_portfolio/widget/project_card.dart';
 
 class PortfolioMobileTab extends StatelessWidget {
-  const PortfolioMobileTab({Key? key}) : super(key: key);
+  const PortfolioMobileTab({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class PortfolioMobileTab extends StatelessWidget {
               projectIcon: ProjectUtils.icons[i],
               projectLink: ProjectUtils.links[i],
               projectTitle: ProjectUtils.titles[i],
-              projectDescription: ProjectUtils.description[i],
+              projectDescription: ProjectUtils.descriptions[i],
             ),
           ),
           options: CarouselOptions(
