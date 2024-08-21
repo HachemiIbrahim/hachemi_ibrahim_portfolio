@@ -19,6 +19,7 @@ class AboutTab extends StatelessWidget {
     return Container(
       padding: Space.h,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const Center(
@@ -44,6 +45,7 @@ class AboutTab extends StatelessWidget {
             style: AppText.b2!.copyWith(
               color: AppTheme.c!.primary,
             ),
+            textAlign: TextAlign.center,
           ),
           Space.y1!,
           Text(
@@ -51,6 +53,7 @@ class AboutTab extends StatelessWidget {
             style: AppText.b2b!.copyWith(
               fontFamily: 'Montserrat',
             ),
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: height * 0.02,
@@ -62,6 +65,7 @@ class AboutTab extends StatelessWidget {
               letterSpacing: 1.1,
               fontFamily: 'Montserrat',
             ),
+            textAlign: TextAlign.center,
           ),
           Space.y!,
           Divider(

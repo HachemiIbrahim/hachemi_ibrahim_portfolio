@@ -19,6 +19,7 @@ class AboutMobile extends StatelessWidget {
     return Container(
       padding: Space.h,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const CustomSectionHeading(
             text: '\nAbout Me',
@@ -34,14 +35,12 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.03,
           ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              "Who am I?",
-              style: AppText.b2!.copyWith(
-                color: AppTheme.c!.primary,
-              ),
+          Text(
+            "Who am I?",
+            style: AppText.b2!.copyWith(
+              color: AppTheme.c!.primary,
             ),
+            textAlign: TextAlign.center,
           ),
           Space.y1!,
           Text(
@@ -49,6 +48,7 @@ class AboutMobile extends StatelessWidget {
             style: AppText.b2b!.copyWith(
               fontFamily: 'Montserrat',
             ),
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: height * 0.02,
@@ -60,6 +60,7 @@ class AboutMobile extends StatelessWidget {
               letterSpacing: 1.1,
               fontFamily: 'Montserrat',
             ),
+            textAlign: TextAlign.center,
           ),
           Space.y!,
           Divider(
